@@ -7,6 +7,8 @@ extension Write {
             var title: String = ""
             var content: String = ""
             
+            var lastURL: String? = nil
+            
             /*
             var imageData: Data? = nil
             var postURL: String = ""

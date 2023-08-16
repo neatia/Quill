@@ -17,6 +17,14 @@ extension Write: View {
                 }
                 .buttonStyle(PlainButtonStyle())
                 
+                if let url = state.lastURL {
+                    Spacer()
+                    
+                    Text("Last public url: ")
+                    TextField("", text: .constant(url))
+                        .font(.subheadline)
+                        .textFieldStyle(.plain)
+                }
                 /*
                 Toggle(isOn: _state.enableIPFS) {
                     Text("MISC_IPFS")
